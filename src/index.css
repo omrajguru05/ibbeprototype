@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Inter font */
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+
+:root {
+  color-scheme: light;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: theme('fontFamily.sans');
+  color: theme('colors.black');
+  background: theme('colors.white');
+}
+
+/* Responsive app layout */
+.app-shell {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 56px 1fr;
+  grid-template-areas:
+    "topnav"
+    "main";
+  height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .app-shell {
+    grid-template-columns: 240px 1fr;
+    grid-template-areas:
+      "topnav topnav"
+      "sidebar main";
+  }
+}
+
+.topnav { 
+  grid-area: topnav;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: white;
+}
+
+.sidebar { 
+  grid-area: sidebar;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sidebar { 
+    display: block;
+  }
+}
+
+.main { 
+  grid-area: main; 
+  overflow: auto;
+}
