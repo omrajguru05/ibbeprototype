@@ -1,5 +1,5 @@
 import React from 'react'
-import type { Message } from '@types/models'
+import type { Message } from '../types/models'
 
 export default function DMThread({ title, messages }: { title: string, messages: Message[] }) {
   return (

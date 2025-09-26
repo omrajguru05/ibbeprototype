@@ -1,5 +1,5 @@
 import React from 'react'
-import type { Thread } from '@types/models'
+import type { Thread } from '../types/models'
 
 export default function ServerView({ threads, onOpen }: { threads: Thread[], onOpen: (id: string)=>void }) {
   const channels = threads.filter(t=> t.kind !== 'dm')

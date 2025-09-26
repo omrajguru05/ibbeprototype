@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { getAll } from '@storage/db'
-import type { User, Org } from '@types/models'
-import ProfileCard from '@components/ProfileCard'
+import { getAll } from '../storage/db'
+import type { User, Org } from '../types/models'
+import ProfileCard from '../components/ProfileCard'
 
 export default function Profiles() {
   const [users, setUsers] = useState<User[]>([])

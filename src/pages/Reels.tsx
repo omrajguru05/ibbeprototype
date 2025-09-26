@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { getAll } from '@storage/db'
-import type { Reel } from '@types/models'
-import ReelsPlayer from '@components/ReelsPlayer'
+import { getAll } from '../storage/db'
+import type { Reel } from '../types/models'
+import ReelsPlayer from '../components/ReelsPlayer'
 
 export default function Reels() {
   const [reels, setReels] = useState<Reel[]>([])

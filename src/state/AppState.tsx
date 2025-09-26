@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useMemo, useState } from 'react'
-import { seedIfNeeded, getAll, clearAll, exportAll, importAll } from '@storage/db'
-import type { AccountRole, Org, User } from '@types/models'
+import { seedIfNeeded, getAll, clearAll, exportAll, importAll } from '../storage/db'
+import type { AccountRole, Org, User } from '../types/models'
 
 export type Account = {
   id: string

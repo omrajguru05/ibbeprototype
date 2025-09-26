@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { getAll } from '@storage/db'
-import type { Course, Enrollment, User } from '@types/models'
+import { getAll } from '../storage/db'
+import type { Course, Enrollment, User } from '../types/models'
 
 export default function CourseDetail() {
   const { id } = useParams()

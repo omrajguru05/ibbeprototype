@@ -1,5 +1,5 @@
 import React from 'react'
-import type { Asset } from '@types/models'
+import type { Asset } from '../types/models'
 
 export default function LibraryView({ assets }: { assets: Asset[] }) {
   return (

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { getAll } from '@storage/db'
-import type { Org, Course, Asset, Event } from '@types/models'
-import CourseCard from '@components/CourseCard'
-import LibraryView from '@components/LibraryView'
-import CalendarView from '@components/CalendarView'
+import { getAll } from '../storage/db'
+import type { Org, Course, Asset, Event } from '../types/models'
+import CourseCard from '../components/CourseCard'
+import LibraryView from '../components/LibraryView'
+import CalendarView from '../components/CalendarView'
 
 export default function OrgPage() {
   const { id } = useParams()

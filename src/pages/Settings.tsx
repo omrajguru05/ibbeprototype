@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { useApp } from '@state/AppState'
+import { useApp } from '../state/AppState'
 
 export default function Settings() {
   const { resetDemo, exportData, importData } = useApp()

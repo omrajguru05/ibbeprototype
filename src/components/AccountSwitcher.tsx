@@ -1,5 +1,5 @@
 import React from 'react'
-import { useApp } from '@state/AppState'
+import { useApp } from '../state/AppState'
 
 export default function AccountSwitcher() {
   const { current, users, orgs, setCurrent } = useApp()

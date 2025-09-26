@@ -1,8 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react'
-import { getAll } from '@storage/db'
-import type { Message, Thread } from '@types/models'
-import ServerView from '@components/ServerView'
-import ChatWindow from '@components/ChatWindow'
+import { getAll } from '../storage/db'
+import type { Message, Thread } from '../types/models'
+import ServerView from '../components/ServerView'
+import ChatWindow from '../components/ChatWindow'
 
 export default function Servers() {
   const [threads, setThreads] = useState<Thread[]>([])

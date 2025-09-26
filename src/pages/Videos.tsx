@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { getAll } from '@storage/db'
-import type { Video } from '@types/models'
-import VideoPlayer from '@components/VideoPlayer'
+import { getAll } from '../storage/db'
+import type { Video } from '../types/models'
+import VideoPlayer from '../components/VideoPlayer'
 
 export default function Videos() {
   const [videos, setVideos] = useState<Video[]>([])

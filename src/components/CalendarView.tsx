@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import type { Event } from '@types/models'
+import type { Event } from '../types/models'
 
 export default function CalendarView({ events }: { events: Event[] }) {
   const grouped = useMemo(() => {

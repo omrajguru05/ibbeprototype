@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { getAll } from '@storage/db'
-import type { Asset } from '@types/models'
-import LibraryView from '@components/LibraryView'
+import { getAll } from '../storage/db'
+import type { Asset } from '../types/models'
+import LibraryView from '../components/LibraryView'
 
 export default function Drive() {
   const [assets, setAssets] = useState<Asset[]>([])

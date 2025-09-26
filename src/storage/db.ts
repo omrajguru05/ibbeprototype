@@ -1,7 +1,7 @@
 // Very small IndexedDB helper tailored for the prototype
 // Stores: orgs, users, courses, enrollments, posts, videos, reels, messages, threads, assets, events
 
-import type { Org, User, Course, Enrollment, Post, Video, Reel, Message, Thread, Asset, Event } from '@types/models'
+import type { Org, User, Course, Enrollment, Post, Video, Reel, Message, Thread, Asset, Event } from '../types/models'
 
 const DB_NAME = 'ibbe-prototype'
 const DB_VERSION = 1

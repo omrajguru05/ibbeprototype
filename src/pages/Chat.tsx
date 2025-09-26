@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
-import { getAll } from '@storage/db'
-import type { Message, Thread } from '@types/models'
-import DMThread from '@components/DMThread'
+import { getAll } from '../storage/db'
+import type { Message, Thread } from '../types/models'
+import DMThread from '../components/DMThread'
 
 export default function Chat() {
   const [threads, setThreads] = useState<Thread[]>([])

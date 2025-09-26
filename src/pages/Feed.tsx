@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { getAll } from '@storage/db'
-import type { Post, Org } from '@types/models'
-import FeedCard from '@components/FeedCard'
+import { getAll } from '../storage/db'
+import type { Post, Org } from '../types/models'
+import FeedCard from '../components/FeedCard'
 
 export default function Feed() {
   const [posts, setPosts] = useState<Post[]>([])

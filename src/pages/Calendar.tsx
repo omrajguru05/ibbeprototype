@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { getAll } from '@storage/db'
-import type { Event } from '@types/models'
-import CalendarView from '@components/CalendarView'
+import { getAll } from '../storage/db'
+import type { Event } from '../types/models'
+import CalendarView from '../components/CalendarView'
 
 export default function Calendar() {
   const [events, setEvents] = useState<Event[]>([])

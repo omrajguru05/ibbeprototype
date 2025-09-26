@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { getAll } from '@storage/db'
-import type { Course } from '@types/models'
-import CourseCard from '@components/CourseCard'
+import { getAll } from '../storage/db'
+import type { Course } from '../types/models'
+import CourseCard from '../components/CourseCard'
 
 export default function Courses() {
   const [courses, setCourses] = useState<Course[]>([])
